@@ -20,6 +20,35 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
+    [self getCornerImage];
+    
+    
+    
+}
+
+
+// 生成圆角图片
+- (void)getCornerImage {
+    UIImage *img = [UIImage imageWithColor:[UIColor cyanColor] size:CGSizeMake(800, 800)];
+    UIImageView *iv = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 200, 200)];
+    iv.center = self.view.center;
+    [self.view addSubview: iv];
+    
+    
+    // 方法1：设置cornerRadius ，性能最差
+//    iv.image = img;
+//    iv.layer.cornerRadius = 100;
+//    iv.layer.masksToBounds = YES;
+    
+    // 方法2：利用绘图，性能提高
+//    iv.image = [img cornerImageWithSize:iv.bounds.size];
+//    iv.image = [img cornerImageWithSize:iv.bounds.size fillColor:[UIColor whiteColor]];
+    [img cornerImageWithSize:iv.bounds.size fillColor:[UIColor whiteColor] completion:^(UIImage *image) {
+        iv.image = image;
+    }];
+}
+
+- (void)test1 {
     self.view.backgroundColor = WCL_ColorHex(123456);
     UIView *v = [[UIView alloc] initWithFrame:CGRectMake(120, 120, 150, 60)];
     v.backgroundColor = WCL_ColorHex(7d7d7d);
@@ -30,13 +59,7 @@
     btn.backgroundColor = WCL_ColorHex(666666);
     btn.badgeValue = @"8";
     [self.view addSubview:btn];
-    
-    
-}
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 @end

@@ -10,6 +10,13 @@
 
 @interface UIImage (Tool)
 
+/** 根据当前图像和指定尺寸进行裁切，生成圆角图像，并返回 */
+//- (UIImage *)cornerImageWithSize:(CGSize)size; // 此种方法圆角图像周边会变成黑色
+/** 根据当前图像和指定尺寸进行裁切，生成圆角图像，并设置周边填充颜色后返回 */
+- (UIImage *)cornerImageWithSize:(CGSize)size fillColor:(UIColor *)fillColor;
+/** 异步执行裁切圆角图像完成后，通过block参数回调通知调用方结果 */
+- (void)cornerImageWithSize:(CGSize)size fillColor:(UIColor *)fillColor completion:(void(^)(UIImage *image))completion;  // 推荐使用：性能最好！
+
 @end
 
 
