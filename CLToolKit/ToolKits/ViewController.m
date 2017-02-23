@@ -46,6 +46,9 @@
     [img cornerImageWithSize:iv.bounds.size fillColor:[UIColor whiteColor] completion:^(UIImage *image) {
         iv.image = image;
     }];
+    
+    
+    
 }
 
 - (void)test1 {

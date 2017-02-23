@@ -40,6 +40,7 @@
 		3BD2E4691E59F68F00B7FC75 /* UITableView+Tool.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BD2E4681E59F68F00B7FC75 /* UITableView+Tool.m */; };
 		3BD2E46D1E59F7B300B7FC75 /* UINavigationController+Tool.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BD2E46C1E59F7B300B7FC75 /* UINavigationController+Tool.m */; };
 		3BD2E4711E59FC1000B7FC75 /* UIButton+Tool.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BD2E4701E59FC1000B7FC75 /* UIButton+Tool.m */; };
+		94B887BB1E5F30D400FE9B3E /* UIImageView+Tool.m in Sources */ = {isa = PBXBuildFile; fileRef = 94B887BA1E5F30D400FE9B3E /* UIImageView+Tool.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -113,6 +114,8 @@
 		3BD2E46C1E59F7B300B7FC75 /* UINavigationController+Tool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+Tool.m"; sourceTree = "<group>"; };
 		3BD2E46F1E59FC1000B7FC75 /* UIButton+Tool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Tool.h"; sourceTree = "<group>"; };
 		3BD2E4701E59FC1000B7FC75 /* UIButton+Tool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Tool.m"; sourceTree = "<group>"; };
+		94B887B91E5F30D400FE9B3E /* UIImageView+Tool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+Tool.h"; sourceTree = "<group>"; };
+		94B887BA1E5F30D400FE9B3E /* UIImageView+Tool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+Tool.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -266,6 +269,7 @@
 			isa = PBXGroup;
 			children = (
 				3B80E03F1E58CF4F007CE285 /* UIKits+Tool.h */,
+				94B887B81E5F30B600FE9B3E /* UIImageView+Tool */,
 				3B6681421E5B214C00F87E94 /* UINavigationItem+Tool */,
 				3B66813E1E5B1E4400F87E94 /* UIBarButtonItem+Tool */,
 				3B66813A1E5B1CAE00F87E94 /* UIControl+Tool */,
@@ -482,6 +486,15 @@
 			path = "UIButton+Tool";
 			sourceTree = "<group>";
 		};
+		94B887B81E5F30B600FE9B3E /* UIImageView+Tool */ = {
+			isa = PBXGroup;
+			children = (
+				94B887B91E5F30D400FE9B3E /* UIImageView+Tool.h */,
+				94B887BA1E5F30D400FE9B3E /* UIImageView+Tool.m */,
+			);
+			path = "UIImageView+Tool";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -563,6 +576,7 @@
 				3B66813D1E5B1CCD00F87E94 /* UIControl+Tool.m in Sources */,
 				3BD2E4441E59E47F00B7FC75 /* UIDevice+Tool.m in Sources */,
 				3BD2E4491E59E77200B7FC75 /* NSBundle+Tool.m in Sources */,
+				94B887BB1E5F30D400FE9B3E /* UIImageView+Tool.m in Sources */,
 				3B66814D1E5B36C900F87E94 /* NSData+Tool.m in Sources */,
 				3BD2E4381E59DA3400B7FC75 /* TKConstants.m in Sources */,
 				3BD2E4551E59EB5600B7FC75 /* NSFileManager+Tool.m in Sources */,

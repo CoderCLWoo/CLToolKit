@@ -15,6 +15,8 @@
 
 @interface NSObject (AppInfo)
 
+BOOL method_swizzle(Class klass, SEL origSel, SEL altSel);
+
 + (NSString *)version;
 
 + (NSInteger)build;

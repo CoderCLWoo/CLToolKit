@@ -23,6 +23,7 @@
 #import "UIControl+Tool.h"
 #import "UIBarButtonItem+Tool.h"
 #import "UINavigationItem+Tool.h"
+#import "UIImageView+Tool.h"
 
 
 #endif /* UIKits_Tool_h */
