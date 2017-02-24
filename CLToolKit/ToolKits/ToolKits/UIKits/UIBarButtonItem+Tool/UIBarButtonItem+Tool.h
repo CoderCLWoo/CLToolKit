@@ -48,3 +48,9 @@
 @property BOOL shouldAnimateBadge;
 
 @end
+
+
+
+@interface UIBarButtonItem (Extension)
++ (instancetype)itemWithImage:(NSString *)image highImage:(NSString *)highImage target:(id)target action:(SEL)action;
+@end
