@@ -14,9 +14,12 @@
 #define WCL_DEPRECATED(explain) __attribute__((deprecated(explain)))
 // eg: + (void)registerSubclass WCL_DEPRECATED("Deprecated in 1.6.0. Use `+[CYLPlusButton registerPlusButton]` instead.");
 
+#ifdef __OBJC__
 #pragma mark - 屏幕物理尺寸
 #define WCL_ScreenHeight  [UIScreen mainScreen].bounds.size.height
 #define WCL_ScreenWidth   [UIScreen mainScreen].bounds.size.width
+
+#endif
 
 #pragma mark -  视图尺寸、坐标
 #define WCL_GetMinX(view) CGRectGetMinX(view.frame)//视图最小X坐标
@@ -38,8 +41,5 @@
 //自定义颜色
 #define WCL_Color_RGBA(R,G,B,A) \
 [UIColor colorWithRed:(R/255.0f) green:(G/255.0f) blue:(B/255.0f) alpha:A]
-
-
-
 
 #endif /* WCLConstants_h */
