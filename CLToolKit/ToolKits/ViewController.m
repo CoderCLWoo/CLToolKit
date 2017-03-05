@@ -20,14 +20,13 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    [self getCornerImage];
     
-    
-    
+    NSLog(@"hello world");
+
 }
 
 
-// 生成圆角图片
+//< 生成圆角图片.
 - (void)getCornerImage {
     UIImage *img = [UIImage imageWithColor:[UIColor cyanColor] size:CGSizeMake(800, 800)];
     UIImageView *iv = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 200, 200)];

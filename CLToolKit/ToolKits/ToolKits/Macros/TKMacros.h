@@ -11,6 +11,19 @@
 
 #import "Singleton.h"
 
+#pragma mark - NSLog 处理
+
+#ifdef __OBJC__
+
+#ifdef DEBUG
+//    #define NSLog(...)  NSLog(__VA_ARGS__)
+    #define NSLog(fmt, ...)  NSLog((@"%s [Line %d] " fmt), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__)
+#else
+    #define NSLog(...)
+#endif
+
+#endif
+
 #define WCL_DEPRECATED(explain) __attribute__((deprecated(explain)))
 // eg: + (void)registerSubclass WCL_DEPRECATED("Deprecated in 1.6.0. Use `+[CYLPlusButton registerPlusButton]` instead.");
 
