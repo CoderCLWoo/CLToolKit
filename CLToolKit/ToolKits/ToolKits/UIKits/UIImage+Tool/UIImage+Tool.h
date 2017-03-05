@@ -160,3 +160,10 @@ typedef void (^UIImageSizeRequestCompleted) (NSURL* imgURL, CGSize size);
 @end
 
 
+@interface UIImage (OrientationFix)
+
+- (UIImage *)imageWithFixedOrientation;
+
+@end
+
+

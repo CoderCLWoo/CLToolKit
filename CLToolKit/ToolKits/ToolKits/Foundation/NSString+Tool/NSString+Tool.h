@@ -302,3 +302,11 @@
 @end
 
 
+@interface NSString (Category)
+
+/** 根据字符串的字体和size(此处size设置为字符串宽和MAXFLOAT)返回多行显示时的字符串size */
+- (CGSize)stringSizeWithFont:(UIFont *)font Size:(CGSize)size;
+
+@end
+
+

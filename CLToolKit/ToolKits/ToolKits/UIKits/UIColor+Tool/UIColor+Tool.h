@@ -61,3 +61,18 @@ NS_ASSUME_NONNULL_END
 + (UIColor *)colorWithHex:(NSString *)stringToConvert;
 
 @end
+
+@interface UIColor (PublicTool)
+
+/** 16进制颜色代码(不须`0x`或`#`前缀) 转UIColor */
++ (UIColor *)colorWithString:(NSString *)hexColor;
+
+/** 输入 0~255 的RGB数值和 0~1 的alpha值 转化UIColor  */
++ (UIColor *)colorWithR:(CGFloat)red G:(CGFloat)green B:(CGFloat)blue alpha:(CGFloat)alpha;
+
+/** 得到一个透明度为 alpha 的随机颜色 */
++ (UIColor *)randomColorWithAlpha:(CGFloat)alpha;
+/** 得到一个 alpha 值为 1.0f 的随机颜色 */
++ (UIColor *)randomColor;
+
+@end
