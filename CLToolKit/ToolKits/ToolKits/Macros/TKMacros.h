@@ -51,8 +51,11 @@
 
 #define WCL_GetHeight(view) CGRectGetHeight(view.frame)//视图高度
 
-//自定义颜色
+
+#pragma mark - 自定义颜色
+
 #define WCL_Color_RGBA(R,G,B,A) \
 [UIColor colorWithRed:(R/255.0f) green:(G/255.0f) blue:(B/255.0f) alpha:A]
+
 
 #endif /* WCLConstants_h */

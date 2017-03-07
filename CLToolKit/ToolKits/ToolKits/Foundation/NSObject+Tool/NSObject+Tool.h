@@ -149,8 +149,9 @@ typedef void (^KVOBlock)(NSDictionary *change, void *context);
 -(NSDictionary *)protocolList;
 + (NSDictionary *)protocolList;
 
-
+// 是否有某个属性
 - (BOOL)hasPropertyForKey:(NSString*)key;
+// 是否有某个成员变量
 - (BOOL)hasIvarForKey:(NSString*)key;
 
 @end

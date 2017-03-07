@@ -335,7 +335,7 @@
         [propertyNames addObject:[NSString stringWithUTF8String:name]];
     }
     free(properties);
-    return propertyNames;
+    return propertyNames.copy;
 }
 
 - (NSArray *)propertiesInfo
@@ -424,7 +424,7 @@
         [methodList addObject:strName];
     }
     free(methods);
-    return methodList;
+    return methodList.copy;
 }
 
 -(NSArray*)methodListInfo
@@ -483,7 +483,7 @@
     }
     free(methods);
     
-    return methodList;
+    return methodList.copy;
 }
 
 + (NSArray *)registedClassList
