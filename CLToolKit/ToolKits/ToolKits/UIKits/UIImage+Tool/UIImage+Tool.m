@@ -10,6 +10,7 @@
 
 @implementation UIImage (Tool)
 
+
 - (UIImage *)cornerImageWithSize:(CGSize)size {
     // 1.利用绘图，建立上下文
     UIGraphicsBeginImageContextWithOptions(size, YES, 0);
